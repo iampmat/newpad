@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "<new pad>",
+  "description": "This extension creates a note pad in a new tab",
+  "version": "1.0",
+
+  "permissions": [
+    "tabs"
+  ],
+  "browser_action": {
+    
+  },
+  "chrome_url_overrides": {
+    "newtab": "newpad.html"
+  }
+}
