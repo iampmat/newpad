@@ -1,8 +1,27 @@
 #edit {
-background-color:white;
+background-color:e8ebeb;
 width: 100%; 
 height: 100%;
 position: absolute; 
+top: 3em; 
+left: 0;
+}
+#date {
+background-color:e8ebeb;
+width: 100%; 
+height: 100%;
+position: absolute;
 top: 0; 
 left: 0;
+}
+[contenteditable="true"]:focus {
+    outline: none;
+}
+#list {
+background-color:e8ebeb;
+width: 100%; 
+height: 100%;
+position: absolute; 
+top: 3em; 
+right: 0;
 }
