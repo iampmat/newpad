@@ -1,23 +1,19 @@
 //Check edits onload
 window.addEventListener('load', onLoad);
 function onLoad() {
-	var editElem = document.getElementById("edit");
+	var dateElem = document.getElementById("date");
 	var today = new Date();
 	var dd = today.getDate();
-	var mm = today.getMonth()+1; //January is 0!
+	var mm = today.getMonth()+1;
 	var yyyy = today.getFullYear();
-
 	if(dd<10) {
     	dd='0'+dd
 	} 
-
 	if(mm<10) {
     	mm='0'+mm
 	} 
-
 	today = mm+'/'+dd+'/'+yyyy;
-
-	editElem.innerHTML += today;
+	dateElem.innerHTML += today;
 	checkEdits();
 }
 function checkEdits() {
@@ -39,3 +35,16 @@ function saveEdits() {
 	//save the content to local storage
 	localStorage.userEdits = userVersion;
 };
+/*
+function buildTopSitesList(mostVisitedURLs) {
+  var listDiv = document.getElementById('list');
+  var ol = listDiv.appendChild(document.createElement('ol'));
+
+  for (var i = 0; i < 5; i++) {
+    var li = ol.appendChild(document.createElement('li'));
+    var a = li.appendChild(document.createElement('a'));
+    a.href = mostVisitedURLs[i].url;
+    a.appendChild(document.createTextNode(mostVisitedURLs[i].title));
+  }
+}
+chrome.topSites.get(buildTopSitesList);*/
