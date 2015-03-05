@@ -1,27 +1,26 @@
+body {
+background-color:#e8e9ec;
+}
 #edit {
-background-color:e8ebeb;
+background-color:#e8e9ec;
 width: 100%; 
 height: 100%;
+margin-left: 10px;
+margin-right: 10px;
 position: absolute; 
 top: 3em; 
 left: 0;
 }
 #date {
-background-color:e8ebeb;
+background-color:#e8e9ec;
 width: 100%; 
 height: 100%;
+margin-left: 10px;
+margin-right: 10px;
 position: absolute;
 top: 0; 
 left: 0;
 }
 [contenteditable="true"]:focus {
     outline: none;
-}
-#list {
-background-color:e8ebeb;
-width: 100%; 
-height: 100%;
-position: absolute; 
-top: 3em; 
-right: 0;
 }

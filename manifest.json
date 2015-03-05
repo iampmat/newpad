@@ -14,5 +14,8 @@
   },
   "chrome_url_overrides": {
     "newtab": "newpad.html"
-  }
+  },
+  "icons": { "16": "newpadicon16.png",
+           "48": "newpadicon48.png",
+          "128": "newpadicon128.png" }
 }
